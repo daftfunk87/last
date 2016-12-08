@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import praw
 
-user_agent = ("picklebot9000 0.1")
+user_agent = ("picklebot9000")
 
 r = praw.Reddit(user_agent = user_agent)
 
