@@ -12,7 +12,7 @@ if not os.path.isfile("config_bot.py"):
     exit(1)
 
 # Create the Reddit instance
-user_agent = ("PyFor Eng bot 0.1")
+user_agent = ("picklebot9000")
 r = praw.Reddit(user_agent=user_agent)
 
 # and login
@@ -31,7 +31,7 @@ else:
         posts_replied_to = filter(None, posts_replied_to)
 
 # Get the top 5 values from our subreddit
-subreddit = r.get_subreddit('pythonforengineers')
+subreddit = r.get_subreddit('calgaryflames')
 for submission in subreddit.get_hot(limit=5):
     # print submission.title
 
@@ -41,7 +41,7 @@ for submission in subreddit.get_hot(limit=5):
         # Do a case insensitive search
         if re.search("i love python", submission.title, re.IGNORECASE):
             # Reply to the post
-            submission.add_comment("Nigerian scammer bot says: It's all about the Bass (and Python)")
+            submission.add_comment("WHO LOVES PICKLE? YOU LOVES PICKLE: PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE PICKLE ^^^^Iregretnothing")
             print "Bot replying to : ", submission.title
 
             # Store the current id into our list
